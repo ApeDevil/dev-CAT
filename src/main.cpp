@@ -1,19 +1,52 @@
 #include <Arduino.h>
 
-
-// test 4
-
 // put function declarations here:
 int myFunction(int, int);
 
+
+
+//test button
+#define pI 46
+int bRead;
+
+
+
+
+
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+
+  //test buton
+  pinMode(pI, INPUT_PULLUP);
+
+  Serial.begin(115200);
+
 }
 
+
+
+
+
 void loop() {
-  // put your main code here, to run repeatedly:
+
+
+  Serial.println("loop");
+  delay(1000);
+
+
+bRead = digitalRead(pI);
+
+  if (bRead == 0) {
+
+    Serial.println("b");
+
+  }
 }
+
+
+
+
+
+
 
 // put function definitions here:
 int myFunction(int x, int y) {
