@@ -1,11 +1,11 @@
-# Development repository for the CAT, which runs on the  development board.
+# Development repository for the CAT
 
 ![Alt Text](images/cats.webp)
 
 The cat is a computer input device with different modules. Together with the software it's a versatile and flexible system that accommodates the individual needs of any user. LYNX aims to create equipment that enhances the workflow by reducing unnecessary movements.
 
-## PlatformIO
-## BPI-Leaf-S3 (esp32s3)
+## development environment: PlatformIO
+## development board: BPI-Leaf-S3 (esp32s3)
 
 
 
