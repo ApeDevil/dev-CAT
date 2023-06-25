@@ -4,7 +4,7 @@
 
 The cat is a computer input device with different modules. Together with the software it's a versatile and flexible system that accommodates the individual needs of any user. LYNX aims to create equipment that enhances the workflow by reducing unnecessary movements.
 
-## development environment: PlatformIO
+## development environment: PlatformIO  sss
 ## development board: BPI-Leaf-S3 (esp32s3)
 
 
@@ -16,3 +16,5 @@ The cat is a computer input device with different modules. Together with the sof
 
 ## Software Architecture Diagrams
 ![Alt Text](images/SAD.svg)
+
+
