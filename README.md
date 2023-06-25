@@ -6,3 +6,8 @@ The cat is a computer input device with different modules. Together with the sof
 
 ## Circuit
 ![Alt Text](images/circuit.webp)
+
+
+
+## Software Architecture Diagrams
+![Alt Text](images/SAD.svg)
