@@ -1,7 +1,14 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+#include "test.h"
+
+
+#include "config.h"
+Config config;
+
+
+
+
 
 
 
@@ -14,6 +21,8 @@ int bRead;
 
 
 void setup() {
+
+  config.Setup();
 
   //test buton
   pinMode(pI, INPUT_PULLUP);
@@ -33,11 +42,14 @@ void loop() {
   delay(1000);
 
 
-bRead = digitalRead(pI);
+  bRead = digitalRead(pI);
 
   if (bRead == 0) {
 
     Serial.println("b");
+    // Serial.println(test);
+    // testFun();
+    Serial.println(config.variant);
 
   }
 }
@@ -46,9 +58,10 @@ bRead = digitalRead(pI);
 
 
 
+// // put function declarations here:
+// int myFunction(int, int);
 
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}
+// // put function definitions here:
+// int myFunction(int x, int y) {
+//   return x + y;
+// }
