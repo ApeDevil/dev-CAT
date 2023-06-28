@@ -1,12 +1,25 @@
+/*
+Version: 0.2.0
+Date: 01.06.2023
+Developer: Stanislaw Kirpicnikow (Ape Devil)
+Remark: 
+*/
+
+
+
+// test
+
+
 #include <Arduino.h>
 
 #include "test.h"
 
 
 #include "config.h"
-Config config;
 
 
+#include "layouts_manager.h"
+Layouts_Manager layouts_manager;
 
 
 
@@ -22,7 +35,11 @@ int bRead;
 
 void setup() {
 
-  config.Setup();
+  // setting up the cat variant for the communication with the LYNXapp
+  config.set_variant();
+
+
+
 
   //test buton
   pinMode(pI, INPUT_PULLUP);
@@ -39,17 +56,20 @@ void loop() {
 
 
   Serial.println("loop");
-  delay(1000);
+  delay(50);
+
 
 
   bRead = digitalRead(pI);
-
   if (bRead == 0) {
 
-    Serial.println("b");
+    // Serial.println("b");
     // Serial.println(test);
     // testFun();
+
     Serial.println(config.variant);
+    
+    layouts_manager.get_layouts();
 
   }
 }
